@@ -1,0 +1,26 @@
+// Acyclia Wifi Inserts
+INSERT INTO `Bluetooth_Adjacent_Devices` (`pid`, `node1`, `node2`, `distance_between`, `travel_time`, `virtural_latitude_node_1`, `virtural_longitude_node_1`, `virtural_latitude_node_2`, `virtural_longitude_node_2`, `verified`)
+VALUES
+	(10, 11, 12, 1.30, 60, 38.602997, -121.544785, 38.617805, -121.530434, 1),
+	(11, 12, 13, 1.00, 60, 38.617805, -121.530434, 38.627773, -121.511108, 1),
+	(12, 13, 14, 1.50, 60, 38.627773, -121.511108, 38.639538, -121.488541, 1);
+
+	INSERT INTO `Devices` (`dID`, `deviceType`, `deviceName`, `deviceIP`, `devicePort1`, `devicePort2`, `deviceRealLatitude`, `deviceRealLongitude`, `deviceVirturalLatitude`, `deviceVirturalLongitude`, `deviceChanged`, `deviceStatus`, `deviceLastSeen`, `deviceBufferSize`, `deviceSoftwareVersion`, `deviceMacAddress`, `deviceTest`, `deviceAPIKey`, `deviceSerialID`)
+VALUES
+	(11, 'AW', 'Bryte Bend Bridge', '', 0, NULL, 38.602997, -121.544785, 38.602997, -121.544785, 0, 1, NULL, NULL, NULL, NULL, NULL, 'MlgJcGVhpiPVTxdfRRZEHM22QWS6klqxhOkd0uXt', 162029),
+	(12, 'AW', 'W. El Camino CMS WB', '', 0, NULL, 38.617805, -121.530434, 38.617805, -121.530434, 0, 1, NULL, NULL, NULL, NULL, NULL, 'MlgJcGVhpiPVTxdfRRZEHM22QWS6klqxhOkd0uXt', 162028),
+	(13, 'AW', 'San Juan OC EB', '', 0, NULL, 38.627773, -121.511108, 38.627773, -121.511108, 0, 1, NULL, NULL, NULL, NULL, NULL, 'MlgJcGVhpiPVTxdfRRZEHM22QWS6klqxhOkd0uXt', 162030),
+	(14, 'AW', 'Truxel Rd. CMS (WB)', '', 0, NULL, 38.639538, -121.488541, 38.639538, -121.488541, 0, 1, NULL, NULL, NULL, NULL, NULL, 'MlgJcGVhpiPVTxdfRRZEHM22QWS6klqxhOkd0uXt', 162026);
+	
+	
+	
+	
+// CTDRI Bluetooth Inserts
+INSERT INTO `Bluetooth_Adjacent_Devices` (`pid`, `node1`, `node2`, `distance_between`, `travel_time`, `virtural_latitude_node_1`, `virtural_longitude_node_1`, `virtural_latitude_node_2`, `virtural_longitude_node_2`, `verified`)
+VALUES
+	(1, 1, 2, 0.20, 12, 38.557426, -121.447685, 38.556519, -121.444321, 1);
+
+INSERT INTO `Devices` (`dID`, `deviceType`, `deviceName`, `deviceIP`, `devicePort1`, `devicePort2`, `deviceRealLatitude`, `deviceRealLongitude`, `deviceVirturalLatitude`, `deviceVirturalLongitude`, `deviceChanged`, `deviceStatus`, `deviceLastSeen`, `deviceBufferSize`, `deviceSoftwareVersion`, `deviceMacAddress`, `deviceTest`, `deviceAPIKey`, `deviceSerialID`)
+VALUES
+	(1, 'BT', 'Hwy 50 & 48th Street', '10.29.248.26', 2003, 2004, 0.000000, 0.000000, NULL, NULL, 0, 1, '2013-11-01 08:59:44', NULL, NULL, NULL, 1, NULL, NULL),
+	(2, 'BT', 'Hwy 50 & 51st Street', '10.254.27.243', 2003, 2004, 0.000000, 0.000000, NULL, NULL, 0, 1, '2013-11-01 08:59:44', NULL, NULL, NULL, 1, NULL, NULL);
